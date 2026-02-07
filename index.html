@@ -3,183 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>תוכנית שיווק אסטרטגית - איימן & הכנה למבחן</title>
+    <title>המדריך המלא לשיווק ויזמות - מהדורת הארכיטקט 2026</title>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Heebo', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f7f6;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        header {
-            text-align: center;
-            border-bottom: 4px solid #2c3e50;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-        }
-        h1 { color: #2c3e50; font-weight: 900; margin-bottom: 10px; }
-        .subtitle { color: #e67e22; font-size: 1.2em; font-weight: 700; }
+        body { font-family: 'Heebo', sans-serif; line-height: 1.6; color: #333; background-color: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 1100px; margin: auto; background: white; padding: 50px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); border-top: 15px solid #2c3e50; }
+        header { text-align: center; margin-bottom: 50px; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+        h1 { color: #2c3e50; font-weight: 900; font-size: 3em; margin-bottom: 5px; }
+        .subtitle { color: #e67e22; font-size: 1.4em; font-weight: 700; }
         
-        h2 { 
-            color: #2980b9; 
-            border-right: 5px solid #e67e22; 
-            padding-right: 15px; 
-            margin-top: 40px;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-        h3 { color: #34495e; margin-top: 25px; font-weight: 700; }
+        /* Checklist Styling */
+        .checklist-box { background: #f8f9fa; padding: 25px; border-radius: 15px; margin-bottom: 50px; border: 1px solid #e0e0e0; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+        th, td { border: 1px solid #dee2e6; padding: 12px; text-align: right; }
+        th { background-color: #2c3e50; color: white; }
+        .unit-header { background-color: #e9ecef; font-weight: 700; color: #2980b9; }
+
+        /* Socratic Sections */
+        h2 { color: #2980b9; font-size: 2.2em; border-bottom: 4px solid #e67e22; display: inline-block; padding-bottom: 5px; margin-top: 60px; margin-bottom: 30px; }
+        h3 { color: #2c3e50; font-size: 1.6em; border-right: 5px solid #e67e22; padding-right: 15px; margin-top: 40px; }
         
+        .question-block { background: #fdfdfd; border-right: 8px solid #e67e22; padding: 25px; margin-bottom: 35px; border-radius: 0 12px 12px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .question-text { font-size: 1.4em; font-weight: 900; color: #2c3e50; margin-bottom: 15px; display: block; }
+        .answer-text { font-size: 1.15em; color: #34495e; }
+        .reasoning-box { background: #eef7ff; border: 1px dashed #2196f3; padding: 18px; border-radius: 10px; margin-top: 15px; }
+        .reasoning-box strong { color: #0d47a1; }
+
+        .example-box { background: #f0fff4; border: 1px solid #c6f6d5; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .example-title { color: #2f855a; font-weight: 900; font-size: 1.2em; margin-bottom: 10px; display: block; }
+
+        .diagram-desc { background: #fff5f5; border: 1px solid #feb2b2; padding: 15px; border-radius: 8px; font-style: italic; margin: 15px 0; }
+        
+        .lecturer-emphasis { background: #fff3e0; border-right: 6px solid #ff9800; padding: 15px; margin-top: 15px; font-weight: 700; }
+
         b, strong { color: #2c3e50; }
-        
-        .concept-box {
-            background: #ecf0f1;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 10px 0;
-            border-right: 4px solid #bdc3c7;
-        }
-        
-        blockquote {
-            background: #fff3e0;
-            border-right: 10px solid #ff9800;
-            margin: 30px 0;
-            padding: 20px;
-            font-style: italic;
-            border-radius: 0 8px 8px 0;
-        }
-        blockquote strong { color: #d35400; }
+        ul { margin-bottom: 10px; }
+        li { margin-bottom: 8px; }
 
-        .case-study {
-            color: #27ae60;
-            font-weight: 500;
-            border-bottom: 1px dashed #27ae60;
-        }
-
-        ul { padding-right: 20px; }
-        li { margin-bottom: 10px; }
-
-        .footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
+        .footer { text-align: center; margin-top: 60px; color: #95a5a6; font-size: 1em; border-top: 1px solid #eee; padding-top: 20px; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <header>
-        <h1>תוכנית שיווק אסטרטגית</h1>
-        <div class="subtitle">עסק המכונות של איימן & סיכום יסודות השיווק</div>
+        <h1>יסודות השיווק והיזמות</h1>
+        <div class="subtitle">המדריך המלא: תאוריה, יישום ונימוקים לוגיים</div>
     </header>
 
-    <h2>חלק א': מבוא ותפיסות יסוד שיווקיות</h2>
-    <p>בשלב הראשון, אנו מגדירים את גבולות הגזרה של המערכת. עסק המכונות אינו "דוכן פחיות", אלא מערך אספקה של פתרונות נוחות.</p>
+    <div class="checklist-box">
+        <h3>📊 דאשבורד מעקב למידה - סילבוס מלא</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>נושא</th>
+                    <th>מושגי מפתח (Verbatim)</th>
+                    <th>סטטוס</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="unit-header"><td colspan="3">1. הגדרות יסוד ותהליכים</td></tr>
+                <tr><td>מה זה שיווק</td><td>תהליך חליפין, רצונות (Wants) מול צרכים</td><td>☐</td></tr>
+                <tr><td>פירמידת מאסלו</td><td>5 שלבים: פיזיולוגי עד מימוש עצמי</td><td>☐</td></tr>
+                <tr><td>תהליך השיווק</td><td>ניתוח -> תכנון -> ביצוע -> בקרה</td><td>☐</td></tr>
+                <tr class="unit-header"><td colspan="3">2. תפיסות שיווקיות ומגמות</td></tr>
+                <tr><td>גישות היסטוריות</td><td>ייצור, מוצר, מכירות, שיווק הוליסטי</td><td>☐</td></tr>
+                <tr><td>שיווק הוליסטי</td><td>פנימי, משולב, יחסים (פארטו), ביצועים</td><td>☐</td></tr>
+                <tr><td>שקיפות</td><td>Transparency וערך מוכח בעידן הדיגיטלי</td><td>☐</td></tr>
+                <tr class="unit-header"><td colspan="3">3. תמהיל השיווק (4P's)</td></tr>
+                <tr><td>המודל הקלאסי</td><td>Product, Price, Place, Promotion</td><td>☐</td></tr>
+                <tr><td>מקרה בוחן סוני</td><td>השקת ה-PS4 (תמהיל מלא)</td><td>☐</td></tr>
+                <tr class="unit-header"><td colspan="3">4. מודלים עסקיים וסביבה</td></tr>
+                <tr><td>מודלים עסקיים</td><td>סכין גילוח, זנב ארוך, טסלה, רולס רויס, מנוי</td><td>☐</td></tr>
+                <tr><td>ניתוח סביבה</td><td>P.E.S.T.D.N (מודל ה"עין" וה"אמבה")</td><td>☐</td></tr>
+                <tr><td>מבנה השוק</td><td>מסחר ישיר/עקיף, שוק רווי, תרשימי זרימה</td><td>☐</td></tr>
+                <tr class="unit-header"><td colspan="3">5. ערך, שביעות רצון ותקשורת</td></tr>
+                <tr><td>ערך לקוח</td><td>משוואת התועלות מול הוצאה</td><td>☐</td></tr>
+                <tr><td>שביעות רצון</td><td>סטנדרט, WOW, ואכזבה (שיווק שלילי)</td><td>☐</td></tr>
+                <tr><td>מודל התקשורת</td><td>מסר, רעש, מדיום, נמען, משוב</td><td>☐</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>יחידה 1: הגדרות יסוד וניהול השיווק</h2>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהי ההגדרה המדויקת לשיווק וכיצד הוא נבדל ממכירה?</span>
+        <div class="answer-text">
+            <b>שיווק (Marketing):</b> תהליך חברתי וניהולי שנועד לאתר ולספק צרכים ורצונות ליחיד או לקבוצה באמצעות תהליך חליפין. המוקד הוא <b>סיפוק צרכי לקוח</b>.
+            <br><b>מכירה (Selling):</b> חלק מתהליך השיווק, המשא ומתן והתוצאה בפועל. 
+        </div>
+        <div class="reasoning-box">
+            <strong>הנימוק הלוגי:</strong> המהפכה התעשייתית ייצרה את האופציה לייצר המון. השפע יצר תחרות, וזו יצרה את הצורך בשיווק כדי להבטיח שהמוצרים המיוצרים אכן עונים על ביקוש קיים.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מה ההבדל בין צורך, רצון וביקוש?</span>
+        <div class="answer-text">
+            <ul>
+                <li><b>צורך (Need):</b> תחושה אנושית של מחסור (חובה ללמוד את ההבדל בין What you want ל-What you need).</li>
+                <li><b>רצון (Want):</b> ביטוי אישי ומעשי לסיפוק הצורך, המושפע מתרבות, חברה והתפתחות אישית.</li>
+                <li><b>ביקוש (Demand):</b> רצונות הנתמכים ב<b>כוח קנייה</b>.</li>
+            </ul>
+        </div>
+        <div class="example-box">
+            <span class="example-title">דוגמה לביקוש:</span>
+            פרארי - לא הרבה יכולים לקנות ולכן הביקוש נמוך. <br>
+            פורד - נגיש לכל כיס ולכן הביקוש גדול.
+        </div>
+    </div>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהי פירמידת הצרכים של מאסלו וכיצד היא מדורגת?</span>
+        <div class="answer-text">
+            הפירמידה מחלקת את הצרכים מהחשוב ביותר לפחות חשוב:
+            <ol>
+                <li><b>חשוב ביותר: צרכים פיזיולוגיים</b> - אוויר, מזון, שינה.</li>
+                <li><b>ביטחון קיום פיזי</b> - ביטחון בכך שיש מה שצריך כדי לחיות.</li>
+                <li><b>צורך לשייכות</b> - משפחה, מין, חברה.</li>
+                <li><b>כבוד והערכה.</b></li>
+                <li><b>מימוש עצמי.</b></li>
+            </ol>
+        </div>
+    </div>
+
+    <h2>יחידה 2: הגישה השיווקית ההוליסטית</h2>
+    <p>הגישה קובעת כי "הכל חשוב" (Everything matters) ודורשת פרספקטיבה רחבה המכירה בתלות ההדדית בין תהליכים.</p>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהם 4 המרכיבים של השיווק ההוליסטי?</span>
+        <div class="answer-text">
+            <ol>
+                <li><b>שיווק פנימי (Internal Marketing):</b> גיוס, הכשרה והנעה של עובדים. השיווק מתחיל בבית; כל המחלקות (כספים, ייצור, משאבי אנוש) חייבות להיות מכוונות-לקוח.</li>
+                <li><b>שיווק משולב (Integrated Marketing):</b> יצירת סינרגיה בין מוצרים, ערוצים, מחיר ותקשורת. המסר חייב להיות אחיד ורציף.</li>
+                <li><b>שיווק יחסים (Relationship Marketing):</b> בניית יחסים ארוכי טווח עם לקוחות, ספקים ומפיצים. המוקד הוא <b>שימור (Retention)</b>.</li>
+                <li><b>שיווק ביצועים (Performance Marketing):</b> הבנת ההחזר הכספי (Financial Accountability) והלא-כספי (Social Responsibility).</li>
+            </ol>
+        </div>
+        <div class="reasoning-box">
+            <strong>הנימוק הלוגי (עקרון פארטו):</strong> 20% מהלקוחות מייצרים 80% מהרווחים. שיפור בשימור לקוחות ב-5% בלבד יכול להגדיל רווחים ב-25% עד 95%, כי הרבה יותר יקר לגייס לקוח חדש מאשר לשמר קיים.
+        </div>
+    </div>
+
+    <h2>יחידה 3: תמהיל השיווק (The 4 P's)</h2>
+    <p>המודל הקלאסי (Jerome McCarthy) משנות ה-60 נועד לעזור למנהל השיווק לבנות אסטרטגיה.</p>
     
-    <ul>
-        <li><strong>הגדרת השוק (Market Definition):</strong> השוק שבו איימן פועל הוא שוק ה<b>צריכה המיידית (On-the-go Consumption)</b>.</li>
-        <li><strong>שיווק לעומת מכירה (Marketing vs. Selling):</strong>
+    <div class="diagram-desc">
+        <b>מודל "העין" של תמהיל השיווק:</b> האישון הוא הארגון, הקשתית היא סביבת המיקרו (מתחרים, ספקים), והעפעפיים/ריסים הם סביבת המאקרו (PESTDN).
+    </div>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מה כולל כל אחד מהמ"מים (4 מ"מים)?</span>
+        <div class="answer-text">
             <ul>
-                <li><b>מכירה (Selling):</b> מתמקדת במוצר הקיים ובצורך של הארגון להפוך אותו למזומן (פוקוס פנימי). <span class="case-study">כפי שרואים במקרה של איימן, גישת המכירה הייתה מנסה "לדחוף" מלאי קיים של משקאות.</span></li>
-                <li><b>שיווק (Marketing):</b> מתמקד בצרכי הלקוח ובתכנון אסטרטגי ארוך טווח (פוקוס חיצוני).</li>
+                <li><b>Product (מוצר):</b> מה מוכרים? שם המותג, אריזה, איכות, שירות, גודל, אחריות, מדיניות החזרות.</li>
+                <li><b>Price (מחיר):</b> כמה משלמים? מחיר מחירון, מדיניות הנחות, תנאי תשלום, אשראי.</li>
+                <li><b>Place (הפצה):</b> איפה פוגשים את המוצר? ערוצים, הפצה פיזית, לוגיסטיקה, ניהול מלאי.</li>
+                <li><b>Promotion (קידום):</b> איך יודעים על המוצר? פרסום, יחסי ציבור (PR), קידום מכירות, שיווק ישיר, מכירה אישית.</li>
             </ul>
-        </li>
-        <li><strong>היצע וביקוש (Supply & Demand):</strong> מצב של <b>שיווי משקל בתחרות משוכללת (Equilibrium in perfect competition)</b> מאופיין בכך שאין <b>דיפרנציאציה במחיר (Price differentiation)</b>.</li>
-        <li><strong>התפיסה השיווקית (Marketing Concept):</strong> מעבר מ<b>תחזיות רווח ומכירות (Sales/Profit forecasting)</b> ל<b>תכנון אסטרטגי (Strategic planning)</b>.</li>
-        <li><strong>המודל המבוסס משאבים (Resource-Based Model):</strong>
-            <ul>
-                <li><b>משאבים מוחשיים (Tangible):</b> נכסים פיזיים – המכונות, המלאי וההון של איימן.</li>
-                <li><b>משאבים בלתי מוחשיים (Intangible):</b> הון אנושי, ידע טכנולוגי (האפליקציה) ומוניטין.</li>
-            </ul>
-        </li>
-    </ul>
+        </div>
+    </div>
 
-    <blockquote>
-        <strong>טיפ למבחן - נקודת מבט של מהנדס:</strong> המרצה מדגיש שכדי שמשאב יהיה <b>ליבת יכולת (Core Competency)</b>, עליו להיות <b>קשה לחיקוי (Hard to imitate)</b>. האלגוריתם של האפליקציה של איימן הוא הנכס האמיתי כאן.
-    </blockquote>
-
-    <h2>חלק ב': ניתוח סביבה חיצונית (Macro) – PESTDN</h2>
-    <p>הסביבה השיווקית מוגדרת כ<b>דינמית, גלובלית ומורכבת</b>.</p>
-
-    <div class="concept-box">
+    <div class="example-box">
+        <span class="example-title">מקרה בוחן: השקת סוני PS4</span>
         <ul>
-            <li><strong>P - Political-Legal:</strong> כולל <b>חקיקה (Legislation)</b> ו<b>רישיונות יבוא (Import licenses)</b>. <span class="case-study">לדוגמה: חוק הפיקדון.</span></li>
-            <li><strong>E - Economic:</strong> <b>כוח קנייה (Purchasing power)</b>, <b>אינפלציה (Inflation)</b> ו<b>ריבית (Interest)</b>.</li>
-            <li><strong>S - Social-Cultural:</strong> <b>שינויים באורח חיים (Life-style shifts)</b>. <span class="case-study">למשל: מחסור בזמן (Lack of time) או עבודה מהבית.</span></li>
-            <li><strong>T - Technological:</strong> <b>קצב תחלופה מואץ (Accelerated replacement rate)</b> של טכנולוגיות.</li>
-            <li><strong>D - Demographic:</strong> גודל האוכלוסייה, <b>מבנה גילאים (Age structure)</b> ו<b>הגירה (Migration)</b>. <span class="case-study">דוגמה: העלייה מרוסיה.</span></li>
-            <li><strong>N - Natural-Ecological:</strong> <b>מחסור במשאבים</b> ו<b>חקיקה ירוקה (Green legislation)</b>.</li>
+            <li><b>Product:</b> קונסולה חזקה לגיימרים (Hard-core) + משחקים אקסקלוסיביים (God of War).</li>
+            <li><b>Price:</b> 399$ (מחיר חדירה אגרסיבי, זול ב-100$ מה-Xbox One).</li>
+            <li><b>Place:</b> הפצה גלובלית רחבה ביום ההשקה + חנות דיגיטלית (PS Store).</li>
+            <li><b>Promotion:</b> קמפיין "Greatness Awaits", כפתור Share בשלט לשיתוף חברתי.</li>
         </ul>
     </div>
 
-    <blockquote>
-        <strong>טיפ למבחן - נקודת מבט של מהנדס:</strong> בבניית המערכת עבור איימן, עלינו לוודא שיש לה <b>Scalability</b> כדי שלא תהיה אובסולוטית תוך רבעון עקב קצב הטכנולוגיה.
-    </blockquote>
+    <h2>יחידה 4: מודלים עסקיים (Business Models)</h2>
 
-    <h2>חלק ג': ניתוח ענף ותחרות (Micro)</h2>
-    
-    <h3>1. מודל 5 הכוחות של פורטר</h3>
-    <ul>
-        <li><b>כוח המיקוח של הקונים:</b> נמוך לפרטי, גבוה למוסדי.</li>
-        <li><b>כוח המיקוח של הספקים:</b> גבוה (שליטת חברות המשקאות).</li>
-        <li><b>איום של תחליפים:</b> גבוה (קיוסקים, חנויות נוחות).</li>
-        <li><b>איום בכניסת מתחרים חדשים:</b> תלוי ב<b>חסמי כניסה (Barriers to entry)</b>.</li>
-        <li><b>עוצמת התחרות בענף:</b> גבוהה במיקומים רווחיים.</li>
-    </ul>
-
-    <h3>2. ניתוח SWOT</h3>
-    <p><b>פנימי:</b> חוזקות (אפליקציה, מיקומים) וחולשות (חוסר יתרון לגודל).</p>
-    <p><b>חיצוני:</b> הזדמנויות (טרנד בריאות, הסכמי סחר) ואיומים (מצב ביטחוני, מוסר תשלומים).</p>
-
-    <blockquote>
-        <strong>טיפ למבחן - נקודת מבט של מהנדס:</strong> ניתוח SWOT הוא הבסיס לאופטימיזציה. אנו משתמשים בחוזקות (האפליקציה) כדי לנצל הזדמנויות (מחסור בזמן של הלקוח).
-    </blockquote>
-
-    <h2>חלק ד': אסטרטגיה ומיצוב</h2>
-    
-    <ul>
-        <li><strong>אסטרטגיות גנריות:</strong>
-            <ul>
-                <li><b>הובלה בעלות (Cost Leadership):</b> <b>יתרון לגודל (Scale economy)</b> וניצול מתקנים.</li>
-                <li><b>בידול (Differentiation):</b> יצירת <b>ערך ייחודי (Unique value)</b> שקשה לחקות.</li>
-            </ul>
-        </li>
-        <li><strong>מיצוב (Positioning):</strong> הדימוי של המותג במוחו של הצרכן.
-            <ul>
-                <li><b>מפת תפיסה (Perceptual Map):</b> תרשים על צירי <b>איכות מול מחיר</b>.</li>
-                <li><b>מיצוב מחדש (Repositioning):</b> שינוי המיקום או שינוי שמות הצירים.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <div class="concept-box">
-        <strong>שגיאות מיצוב קריטיות:</strong>
-        1. תת-מיצוב | 2. מיצוב יתר | 3. <b>מיצוב מבלבל</b> (נוצר מחוסר <b>עקביות - Consistency</b>) | 4. מיצוב יומרני.
+    <div class="question-block">
+        <span class="question-text">שאלה: מהם המודלים העסקיים המרכזיים וכיצד הם פועלים?</span>
+        <div class="answer-text">
+            <ol>
+                <li><b>סכין גילוח (Razor-Blade):</b> מכירת הפלטפורמה בזול (Loss Leader) כדי לייצר בסיס לקוחות (Install Base), והרווח מגיע ממוצרים מתכלים יקרים (קפסולות נספרסו, דיו למדפסת). <b>מטרה: Lock-in.</b></li>
+                <li><b>הזנב הארוך (Long Tail):</b> מכירת כמויות קטנות של המון מוצרים נישתיים. סך המכירות של הנישות שווה או גדול מהלהיטים (דוגמה: אמאזון).</li>
+                <li><b>Direct to Consumer (טסלה):</b> ביטול מתווכים (דילרים) ומכירה ישירה. מאפשר שליטה במותג ותמחור דינמי.</li>
+                <li><b>Servitization (רולס רויס):</b> מעבר ממכירת מוצר למכירת שירות (Power by the Hour). משלמים לפי שימוש, מה שמעביר סיכון ליצרן ומייצר תזרים קבוע.</li>
+                <li><b>מנוי (Subscription):</b> הכנסה חוזרת (Recurring Revenue) ומערכת יחסים ארוכה (Retention). מאפשר צפייה רציפה (Binge) ויוצר התמכרות.</li>
+            </ol>
+        </div>
     </div>
 
-    <h2>חלק ה': תמהיל השיווק (4P) - התוכנית האופרטיבית</h2>
-    <ol>
-        <li><strong>Product (מוצר):</strong> כולל <b>בידול פיזי (Physical)</b> ו<b>בידול פסיכולוגי (Psychological)</b>.</li>
-        <li><strong>Price (מחיר):</b> רמות מחיר, <b>הנחות (Discounts)</b> ותנאי אשראי.</li>
-        <li><strong>Place (מקום/הפצה):</strong> דגש על <b>נוחות הזמנה (Ordering convenience)</b> ופריסה חכמה.</li>
-        <li><strong>Promotion (קידום מכירות):</strong> <b>פרסום (Advertising)</b>, <b>יחסי ציבור (PR)</b> ו<b>חסויות (Sponsorships)</b>.</li>
-    </ol>
+    <h2>יחידה 5: ניתוח סביבה ומבנה השוק</h2>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהו מודל P.E.S.T.D.N לניתוח סביבה?</span>
+        <div class="answer-text">
+            המודל מנתח את סביבת המאקרו (מחוץ ל"אמבה" של הארגון):
+            <ul>
+                <li><b>P - פוליטי/משפטי:</b> חוקים (הגנת הצרכן), פיקוח מחירים, לוביסטים.</li>
+                <li><b>E - כלכלי:</b> שערים, אינפלציה, שוק חופשי.</li>
+                <li><b>S - חברתי:</b> תרבות, נורמות, משפחה.</li>
+                <li><b>T - טכנולוגי:</b> טכנולוגיה מאחדת (פייסבוק), קניות אונליין (אמזון).</li>
+                <li><b>D - דמוגרפי:</b> מבנה האוכלוסייה.</li>
+                <li><b>N - טבעי/סביבתי:</b> אקולוגיה ומשאבים.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: כיצד בנוי השוק ומה ההבדל בין ישראל לעולם?</span>
+        <div class="answer-text">
+            <b>הגדרה לשוק:</b> אוסף של קונים ומוכרים המבצעים עסקאות במוצר מסוים.
+            <ul>
+                <li><b>בעולם:</b> 99% מסחר ישיר (קונה מול מוכר).</li>
+                <li><b>בישראל:</b> 95% מסחר עקיף (יצרן -> סיטונאי -> קמעונאי -> צרכן).</li>
+                <li><b>שוק רווי:</b> מצב בו כל הצרכנים קונים אצל כל המתחרים וכל נתח השוק מנוצל.</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>יחידה 6: ערך, שביעות רצון ותקשורת</h2>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהו "ערך לקוח" וכיצד הוא נמדד?</span>
+        <div class="answer-text">
+            <b>ערך לקוח:</b> הפער שנוצר בין סך התועלות (שירות, תדמית, נוחות, חוויה, יעילות, זמן, פונקציונליות) לבין ההשקעה/מחיר.
+        </div>
+        <div class="diagram-desc">
+            <b>3 תסריטים לשביעות רצון:</b> <br>
+            1. סטנדרטי: ציפיות מומשו. <br>
+            2. !WOW: תוצאה גדולה מהציפייה. <br>
+            3. אכזבה: ציפיות לא מומשו (מוביל לשיתוף חוויה ושיווק שלילי אצל 60% מהלקוחות).
+        </div>
+    </div>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהו מודל התקשורת השיווקית?</span>
+        <div class="answer-text">
+            <b>מסר</b> (המסר השיווקי) -> עובר דרך <b>רעש</b> (הפרעות) -> בתוך <b>מדיום</b> (ערוץ) -> מגיע ל<b>נמען</b> (המפענח) -> ומייצר <b>משוב (Feedback)</b> שחוזר למסר.
+        </div>
+    </div>
+
+    <h2>מידע נוסף ודגשים</h2>
+    <div class="lecturer-emphasis">
+        <b>תפיסות שיווק שונות (התפתחות היסטורית):</b>
+        <ul>
+            <li><b>תפיסת הייצור:</b> איכות גבוהה, מחיר לא מעניין.</li>
+            <li><b>תפיסת המוצר:</b> פורד T שחור - השקעה במוצר ולא בצרכי הלקוח.</li>
+            <li><b>תפיסת המכירות:</b> דחיפת מוצרים קיימים.</li>
+            <li><b>תפיסת השיווק:</b> מענה על צורך. אבן הבוחן: "לקוח מרוצה הוא משווק אך ורק אם יש לו צורך".</li>
+        </ul>
+    </div>
+
+    <div class="question-block">
+        <span class="question-text">שאלה: מהו תהליך ניהול השיווק הלכה למעשה?</span>
+        <div class="answer-text">
+            התהליך הוא אנכי ומחזורי:
+            <ol>
+                <li><b>ניתוח:</b> ניתוח הסביבה העסקית והשיווקית.</li>
+                <li><b>תכנון:</b> קביעת תמהיל השיווק.</li>
+                <li><b>שיווק/ביצוע:</b> ההוצאה לפועל.</li>
+                <li><b>בקרה:</b> בדיקת תוצאות אל מול יעדים.</li>
+            </ol>
+        </div>
+    </div>
 
     <div class="footer">
-        נכתב עבור איימן - מהדורת סטודנט תעשייה וניהול | 2026
+        הופק עבור עסק המכונות של איימן - המדריך המלא למבחן (2026) <br>
+        <b>שיווק הוליסטי: כי הכל חשוב.</b>
     </div>
 </div>
 
